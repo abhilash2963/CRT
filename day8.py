@@ -97,9 +97,9 @@
 import string
 import random
 ps=""
-a=string.printable
-# n=int(input("enter the size:"))
-for i in range(1,9):
+a= string.ascii_letters + string.digits + '@'
+n=int(input("enter the size:"))
+for i in range(n):
     d=random.choice(a)
     ps+=d
 print(ps)
